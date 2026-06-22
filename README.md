@@ -220,7 +220,7 @@ This project is licensed under the **MIT License**.
 
 # 👨‍💻 Author
 
-**Sanyam Gangwal**
+**Samay Billore**
 
 Bachelor of Science in Biotechnology
 
