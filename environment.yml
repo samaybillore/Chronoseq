@@ -1,0 +1,54 @@
+name: CHRONOSEQ
+
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+
+  # --------------------------------------------------
+  # Python
+  # --------------------------------------------------
+
+  - python>=3.11
+  - pip
+
+  # --------------------------------------------------
+  # Python libraries
+  # --------------------------------------------------
+
+  - pandas
+  - numpy
+  - matplotlib
+  - scipy
+  - scikit-learn
+
+  # --------------------------------------------------
+  # RNA-seq tools
+  # --------------------------------------------------
+
+  - sra-tools
+  - fastqc
+  - multiqc
+  - trimmomatic
+  - bowtie2
+  - samtools
+  - stringtie
+
+  # --------------------------------------------------
+  # R
+  # --------------------------------------------------
+
+  - r-base
+
+  # Bioconductor packages
+
+  - bioconductor-edger
+  - bioconductor-limma
+
+  # --------------------------------------------------
+  # Other dependencies
+  # --------------------------------------------------
+
+  - perl

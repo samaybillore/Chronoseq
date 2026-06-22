@@ -1,0 +1,276 @@
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CHRONOSEQ RNA-seq Analysis Report</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Segoe UI,Arial,sans-serif;
+
+    background:#eef2f7;
+
+    color:#222;
+
+    line-height:1.6;
+
+}
+
+.header{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #0f172a
+    );
+
+    color:white;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+
+}
+
+.header h1{
+
+    font-size:42px;
+
+    letter-spacing:2px;
+
+}
+
+.header p{
+
+    margin-top:10px;
+
+    opacity:0.9;
+
+    font-size:17px;
+
+}
+
+.container{
+
+    width:92%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    margin-top:35px;
+
+    margin-bottom:50px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:30px;
+
+    box-shadow:
+        0px 4px 14px rgba(0,0,0,0.08);
+
+}
+
+.card h2{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+    border-left:6px solid #2563eb;
+
+    padding-left:10px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px;
+
+}
+
+td{
+
+    padding:10px;
+
+    border-bottom:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+tr:nth-child(even){
+
+    background:#f7f9fc;
+
+}
+
+img{
+
+    width:100%;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+}
+
+.footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:#10b981;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    margin-top:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>CHRONOSEQ</h1>
+
+<p>End-to-End RNA-seq Analysis Report</p>
+
+<div class="badge">
+
+Version 1.0
+
+</div>
+
+<p>
+
+Generated on
+
+<strong>
+
+{{DATE}}
+
+</strong>
+
+</p>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>📋 Mapping Summary</h2>
+
+{{MAPPING_TABLE}}
+
+</div>
+
+<div class="card">
+
+<h2>🧬 Principal Component Analysis (PCA)</h2>
+
+<img src="plots/PCA.png">
+
+</div>
+
+<div class="card">
+
+<h2>🌋 Volcano Plot</h2>
+
+<img src="plots/Volcano.png">
+
+</div>
+
+<div class="card">
+
+<h2>🔥 Differential Expression Heatmap</h2>
+
+<img src="plots/Heatmap.png">
+
+</div>
+
+<div class="card">
+
+<h2>📈 MA Plot</h2>
+
+<img src="plots/MA_Plot.png">
+
+</div>
+
+</div>
+
+<div class="footer">
+
+Generated automatically by
+
+<strong>CHRONOSEQ</strong>
+
+<br><br>
+
+From Reads to Discovery
+
+</div>
+
+</body>
+
+</html>
+```
